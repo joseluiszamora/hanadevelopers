@@ -103,11 +103,11 @@ nav a.pull { display: none;}
 #fader {width:100%; height:100%; display:block; position:absolute; background:#000; z-index:4000; top:0;}
 
 #slide01 {background-image:url(../images/intro-bg.jpg); background-position:center; background-size:cover; background-color:#000; }
-#slide02 {background-image:url(../images/geo1.jpg); background-position:center; background-size:cover; }
+#slide02 {background-image:url(../images/02.jpg); background-position:center; background-size:cover; }
 
 #slide03 {background-image:url(../images/03.jpg); background-position:center; background-size:cover }
 
-#slide04 {background-image:url(../images/geo2.jpg); background-position:center; background-size:cover; }
+#slide04 {background-image:url(../images/04.jpg); background-position:center; background-size:cover; }
 
 .bt-down {display: block; height: 63px; margin: 0 auto; position: relative; top: 85%; width: 63px; background-position:-6px -3885px; z-index:2000; cursor:pointer}
 
@@ -1290,11 +1290,11 @@ header#fix .pull {height:50px; line-height:51px; background-position:-15px -3534
 	
 #map img {height:140%}
 #slide01 {background-image:url(../images/intro-bg.jpg;  }
-#slide02 {background-image:url(../images/intro-bg.jpg);  }
+#slide02 {background-image:url(../images/02x1900.jpg);  }
 
 #slide03 {background-image:url(../images/03x1900.jpg);}
 
-#slide04 {background-image:url(../images/geo2.jpg); }
+#slide04 {background-image:url(../images/04x1900.jpg); }
 
 
 }
