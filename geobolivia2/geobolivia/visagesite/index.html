@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Geobolivia</title>
+  
+  <meta name="viewport" content="width=device-width">
+  <meta name='viewport' content='user-scalable=1, width=device-width, height=device-height, initial-scale=1'>
+
+  <script src="deploy/bundles/modernizr.js"></script>
+  <script src="deploy/bundles/jquery.js"></script>
+  <link href="deploy/content/style.css" rel="stylesheet"/>
+
+</head>
+<body>
+        
+        <div id="outer-wrapper">          
+            <!-- Sticky nav -->
+            <div class="top-nav sticky-nav">
+              <div class="top-nav-container row">
+                <div class="header-logo">
+                  <a href="#" data-target="#home">
+                    <img src="http://geo.gob.bo/static/img/logo.png">
+                  </a>
+                </div>
+                <div class="menu-list">
+                  <a href="#" class="menu-button">
+                    <span class="list-icon"></span>
+                  </a>
+                </div>
+                <ul class="navigation">
+                  <!-- <li>
+                    <a href="#" class="button-login">Login</a>
+                  </li> -->
+                  <li>
+                    <a href="#" data-target="#contact" class="button-contact">Contactanos</a>
+                  </li>
+                  <li>
+                    <a href="#" data-target="#priority-signup" class="button-signup">Registrarse</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu-button">
+                      Menu
+                      <span class="list-icon"></span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Dot navigation -->
+            <div class="dot-navigation">
+              <div class="hover-caption">test</div>
+              <a href="#" data-target="#home" title="Inicio">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#clients" title="Institución">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#platform" title="Catálogo">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#use-cases" title="Catálogo Avanzado">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#priority-signup" title="Visualizador">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#screenshots" title="Cursos">
+                <div class="section"></div>
+              </a>
+              <a href="#" data-target="#contact" title="Contactanos">
+                <div class="section"></div>
+              </a>
+            </div>
+
+            <!-- Inner wrapper container -->
+            <div id="inner-wrapper">
+
+              <section id="home" class="par"></section>
+              <!-- Header container -->
+              <div id="header" data-type="background" data-speed="2" data-offset="0" class="color">
+                  <!-- <div class="clouds"></div> -->
+                  <!-- Top nav container-->
+                  <div class="top-nav">
+                      <div class="header-logo">
+                        <a href="#" data-target="#home">
+                          <img src="http://geo.gob.bo/static/img/logo.png">
+                        </a>
+                      </div>
+                      <ul class="navigation">
+                        <!-- <li>
+                          <a href="#" class="button-login">Login</a>
+                        </li> -->
+                        <li>
+                          <a href="#" data-target="#contact" class="button-contact">Contactanos</a>
+                        </li>
+                        <li>
+                            <a href="#" data-target="#priority-signup" class="button-signup">Registrarse</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu-button">
+                                Menu
+                                <span class="list-icon"></span>
+                            </a>
+                        </li>
+                      </ul>
+                  </div>
+
+                    <!-- Featured content container -->
+                    <div id="featured-content" data-type="parallax" data-speed="3000" data-offset="0" data-start="0" data-stop="-400" data-transform="moveY">
+                        <div id="featured-text">
+                            <div class="text-line">Geobolivia</div>
+
+<!--
+                            <div class="text-line" data-typer-targets="Beautiful, Branded, Custom, Consistent, Elegant">Beautiful</div>
+                            <div class="text-line" data-typer-targets="Reports, Charts, Presentations, Visualizations, Dashboards">Charts</div>
+-->
+                            <div class="featured-message">
+                                Infraestructura de Datos Espaciales <br> Estado Plurinacional de Bolivia
+                            </div>
+                            <div id="featured-buttons">
+                                <a href="#" class="btn-outline white" data-target="#use-cases">Visualizador</a>
+                                <a href="#" class="btn-outline light-teal" data-target="#priority-signup">Catalogo</a>
+                            </div>
+                        </div>
+
+                        <div id="featured-chart-container">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front">
+                                        <div class="chart donut">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-donut-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide area">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-area-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide grouped-horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-grouped-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide grouped-vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-grouped-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide line">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-line-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide pie">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-pie-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide stacked-horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-stacked-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide stacked-vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-stacked-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="back">
+                                        <div class="chart donut">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-donut-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide area">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-area-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide grouped-horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-grouped-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide grouped-vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-grouped-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide line">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-line-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide pie">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-pie-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide stacked-horizontal-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-stacked-horizontal-bar-labels.png" width="300" alt="">
+                                        </div>
+                                        <div class="chart hide stacked-vertical-bar">
+                                            <img src="deploy/content/themes/asher/images/charts/featured-stacked-vertical-bar-labels.png" width="300" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="scroll-arrow-down" data-target="#platform"></div>
+
+                </div>
+
+                <div id="main-content">
+                    <!-- Clients container -->
+                    <section id="clients" class="par">
+                        <ul id="client-images">
+                            <li>
+                                <img src="deploy/content/themes/asher/images/clients/linkedin.png" alt="">
+                            </li>
+                            <li>
+                                <img src="deploy/content/themes/asher/images/clients/kaiser.png" alt="">
+                            </li>
+                            <li>
+                                <img src="deploy/content/themes/asher/images/clients/ae.png" alt="">
+                            </li>
+                            <li>
+                                <img src="deploy/content/themes/asher/images/clients/edf.png" alt="">
+                            </li>
+                            
+                        </ul>
+                        <div class="clearfix"></div>
+                        <div id="client-title">Our Clients</div>
+                    </section>
+
+                    <!-- Platform container -->
+                    <section id="platform" class="par">
+                        <div class="color-stripe">
+                            <img src="deploy/content/themes/asher/images/main/color-stripe.png" alt="">
+                        </div>
+                        <div class="spacer-small grey" style="margin-top: 80px;"></div>
+                        <h2 class="section-title">The Platform</h2>
+                        <p class="section-description" style="max-width: 700px;">Visage transforms the uninspired data in your reports into beautiful, branded visualizations that make your message more impactful—and make your work look good.</p>
+                        
+                        <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                    </section>
+
+                    <!-- Use cases container -->
+                    <section id="use-cases" class="par">
+                        <div id="use-case-slides" class="swipe">
+                            <div class="swipe-wrap">
+                                <div class="use-case" data-type="background" data-speed="2" data-offset="0">
+                                    <div class="use-case-content">
+                                        <div class="spacer-small light-teal"></div>
+                                        <h2 class="use-case-title">Be Efficient</h2>
+                                        <p class="use-case-description">
+                                            Create convenient, effective internal reports that communicate key information to colleagues.
+                                        </p>
+                                    </div>
+                                    <div class="use-case-image">
+                                        <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                    </div>
+                                </div>
+
+                                <div class="use-case" data-type="background" data-speed="2" data-start="2000" data-offset="0">
+                                    <div class="use-case-content">
+                                        <div class="spacer-small light-teal"></div>
+                                        <h2 class="use-case-title">Be Consistent</h2>
+                                        <p class="use-case-description">
+                                            Create a custom, branded template and image library that follows your organization’s brand guidelines.
+                                        </p>
+                                    </div>
+                                    <div class="use-case-image">
+                                        <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                    </div>
+                                </div>
+
+                                <div class="use-case" data-type="background" data-speed="2" data-offset="0">
+                                    <div class="use-case-content">
+                                        <div class="spacer-small light-teal"></div>
+                                        <h2 class="use-case-title">Be Beautiful</h2>
+                                        <p class="use-case-description">
+                                            Create accurate, elegant charts and visualizations to enhance  your content.
+                                        </p>
+                                    </div>
+                                    <div class="use-case-image">
+                                        <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="use-case-nav">
+                            <div class="nav-container">
+                                <a href="#" class="left-arrow">
+                                    <div class="vi icon-visage-left-arrow-large"></div>
+                                </a>
+                                <div class="slide-nav">
+                                    <a href="#">
+                                        <div class="slide"></div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="slide"></div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="slide"></div>
+                                    </a>
+                                </div>
+                                <a href="#" class="right-arrow">
+                                    <div class="vi icon-visage-right-arrow-large"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Signup container -->
+                    <section id="priority-signup" class="par">
+                        <div class="spacer-small grey"></div>
+                        <h2 class="section-title">Registrarse</h2>
+                        <p class="section-description" style="max-width: 800px;">Visage is currently available to enterprise clients interested in custom designs. The self-serve version will be available this summer. <br />Enter your email to get priority access! (Don’t worry, we’ll only send you important things.) </p>
+                        <div class="form">
+                            <form id="email-signup-form">
+                                <div class="option-group">
+                                    <input id="es_email_address" name="Email" placeholder="Email Address" type="text" data-val="true" data-val-required="The email field is required." data-val-email="The email address is invalid." />
+                                    <label for="es_email_address">
+                                        <span class="vi icon-visage-head-bald"></span>
+                                    </label>
+                                    <div class="error-message">
+                            <div class="fa fa-warning"></div>
+                              <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                            </div>
+                                </div>
+
+                          <div class="critical-error-message hide">
+                            <div class="fa fa-warning"></div>
+                            Sorry, we are unable to process your signup request at this time. Please try again later.
+                                </div>
+
+                          <div class="success-message hide">
+                            <div class="fa fa-check"></div>
+                            Thanks for signing up! You should receive a confirmation email shortly.
+                                </div>
+
+                                <div class="buttons">
+                            <a href="#" class="btn-outline black"  data-default-text="Sign me up" data-action-text="Signing you up...">Sign me up</a>
+                                    
+                                </div>
+                            </form>
+                        </div>
+                    </section>                    
+
+                    <!-- Screenshots container -->
+                    <section id="screenshots" class="par">
+                        <div class="screenshot-container frame">
+                            <ul class="slidee">
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                          <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                          <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                          <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                          <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                                          <li class="screenshot">
+                                    <img src="http://pagdeprueba.comlu.com/maqueta02/img/visalizador.png">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="scrollbar">
+                            <div class="handle">
+                                <div class="vi icon-visage-scroll-arrows-horizontal"></div>
+                            </div>
+                        </div>
+                    </section>
+
+                              
+                    <!-- Contactcontainer -->
+                    <section id="contact" class="par">
+                        <div class="spacer-small light-teal"></div>
+                        <h2 class="section-title">Contactanos</h2>
+                        <p class="section-description" style="max-width: 600px;">Ayudanos a mejorar la plataforma.</p>
+                        <div class="form">
+                        <form id="contact-request-form">
+                          <div style="display: block; margin: 0 auto; padding-left: 6px;">
+                            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+                                </ul></div>
+                          </div>
+                          <div class="option-group">
+                            <input id="first_name" name="FirstName" placeholder="Nombre*" tabindex="0" mouseev="true" keyev="true" data-val="true" data-val-required="The first name field is required." type="text" />
+                            
+                          </div>
+                          <div class="option-group">
+                            <input id="last_name" name="LastName" placeholder="Apellido*" data-val="true" data-val-required="The last name field is required." type="text" />
+                            
+                          </div>
+                          <div class="option-group">
+                            <input id="company" name="Company" placeholder="Institución*" data-val="true" data-val-required="The company field is required." type="text" />
+                             
+                          </div>
+                          <div class="option-group">
+                                    <input id="cr_email_address" name="Email" placeholder="Email*" data-val="true" data-val-required="The email field is required." data-val-email="The email address is invalid." type="text" />
+                                </div>
+
+                          <div class="option-group">
+                                    <textarea id="phone_number" name="Phone" placeholder="Mensaje"></textarea>
+                          </div>
+                                
+                          <div class="critical-error-message hide">
+                            <div class="fa fa-warning"></div>
+                            Sorry, we are unable to process your signup request at this time. Please try again later.
+                                </div>
+
+                          <div class="success-message hide">
+                            <div class="fa fa-check"></div>
+                            Thanks for signing up! You should receive a confirmation email shortly.
+                                </div>
+
+                          <div class="buttons">
+                            <input type="submit" class="btn-outline light-teal" value="Enviar" data-default-text="Submit" data-action-text="Enviando...">
+                          </div>
+                        </form>
+                      </div>
+                        <div id="scroll-arrow-up" data-target="#home"></div>
+
+
+                    </section>
+
+
+        <!-- Footer container -->
+        <section id="footer" class="par">
+           
+            
+      <div class="footer-bar">
+                <div class="footer-copyright">
+                    &copy; 2014 GeoBolivia.
+                </div>
+
+        <div class="social-buttons">
+                    <!--<a href="http://www.linkedin.com/company/visage" target="_blank">
+                        <div class="fa fa-linkedin-square"></div>
+                    </a>
+                    <a href="https://plus.google.com/110077913733978309675/posts" target="_blank">
+                        <div class="fa fa-google-plus-square"></div>
+                    </a>
+                    <a href="https://twitter.com/visageco" target="_blank">
+                        <div class="fa fa-twitter-square"></div>
+                    </a>
+                    
+          <a href="https://www.facebook.com/visagedotco" target="_blank">
+                        <div class="fa fa-facebook-square"></div>
+                    </a>
+                    <a href="http://instagram.com/visagereports" target="_blank">
+                        <div class="fa fa-instagram"></div>
+                    </a>-->
+                    <img src="content/themes/asher/images/main/social.png">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+            <!-- Sidebar container -->
+<div id="sidebar">
+    <div id="sidebar-close-button">
+        <a href="#" class="close-button">
+            <span class="list-icon"></span>
+        </a>
+    </div>
+    <ul id="sidebar-nav">
+        <li>
+            <a href="#" data-target="#home">Inicio</a>
+        </li>
+        <li>
+            <a href="#" data-target="#clients">Institución</a>
+        </li>
+        <li>
+            <a href="#" data-target="#platform">Catálogo</a>
+        </li>
+        <li class="active">
+            <a href="#" data-target="#use-cases">Catálogo Avanzado</a>
+        </li>
+        <li>
+            <a href="#" data-target="#priority-signup">Visualizador</a>
+        </li>
+        <li>
+            <a href="#" data-target="#screenshots">Cursos</a>
+        </li>
+        <li>
+            <a href="#" data-target="#contact">Contactanos</a>
+        </li>
+    </ul>
+    
+</div>
+
+
+      <!-- Modal window container -->
+<div class="modal-window">
+    <div class="modal-content-container">
+        <div id="modal-close-button">
+            <a href="#" class="close-button">
+                <span class="list-icon"></span>
+            </a>
+        </div>
+
+        <div class="input-container">
+            <div class="spacer-small light-teal"></div>
+            <h2 class="modal-title">Download our free eBook</h2>
+            <p class="modal-description" style="max-width: 500px;">Enter your email to download our free visual communication eBook and join our priority signup list.</p>
+            <div class="form">
+                <form id="ebook-signup-form">
+                    <div class="option-group">
+                        <input id="eb_email_address" name="Email" placeholder="Email Address" data-val="true" data-val-required="The email field is required." data-val-email="The email address is invalid." type="text" />
+                        <label for="eb_email_address">
+                            <span class="vi icon-visage-head-bald"></span>
+                        </label>
+                         <div class="error-message">
+                            <div class="fa fa-warning"></div>
+                            <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true"></span>
+                        </div> 
+                    </div>
+
+          <div class="critical-error-message hide">
+            <div class="fa fa-warning"></div>
+            Sorry, we are unable to process your signup request at this time. Please try again later.
+          </div>
+
+                    <div class="buttons">
+            <a href="#" class="btn-outline light-teal verify-download" data-default-text="Download" data-action-text="Downloading...">Download</a>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="success-container">
+            <div class="ebook-icon">
+                <img src="deploy/content/themes/asher/images/main/ebook-icon-light.svg" width="100" alt="">
+            </div>
+            <h2 class="modal-title">Thank You!</h2>
+            <p class="modal-description" style="max-width: 500px;">Your Visage e-book download will begin in one moment..</p>
+      <p class="modal-description" style="max-width: 500px;">If the download is prevented by your popup blocker, please</p>
+      <div class="buttons">
+        <a class="btn-outline light-teal" href="/downloads/Business_Guide_to_Visual_Communication_by_Visage.pdf" target="_blank">download manually</a>
+      </div>
+        </div>
+    </div>
+</div>
+            
+        </div>
+
+    <script src="deploy/bundles/app.js"></script>
+    <script src="deploy/bundles/jqueryval.js"></script>
+</body>
+</html>
