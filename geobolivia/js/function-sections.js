@@ -15,5 +15,5 @@ function resizeContainers(){
 
 function centerHome(){
   // center form search HOME section
-  $("#searchContainer").css("margin-top", ($(window).height() / 2)+"px");  
+  $("#searchContainer").css("margin-top", (($(window).height() / 2) - 60)+"px");  
 }

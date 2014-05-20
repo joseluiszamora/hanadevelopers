@@ -45,7 +45,7 @@ $(function(){
 });
 
 function headerColorsTransparent(){
-  $("#nav-header").css("background", "none repeat scroll 0 0 rgba(0, 0, 0, 0.1)");
+  $("#nav-header").css("background", "url(images/white1.png)");
   $("#nav-header .navbar-nav > li > a").css("color", "#FFFFFF");
 }
 function headerColorsWhite(){
