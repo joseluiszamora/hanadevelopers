@@ -324,7 +324,58 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 /* SECTION CONTACT */
 #contact{
   background: url(../images/white.png);
+  position: relative;
 }
+
+#footer {
+  background: none repeat scroll 0 0 #39454B;
+  color: rgba(185, 186, 187, 0.5);
+  height: 5em;
+  line-height: 5em;
+  margin: -150px 0 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#footer a {
+  color: rgba(185, 186, 187, 0.5);
+}
+#footer a:hover {
+  color: #B9BABB;
+}
+#footer .actions {
+  height: 5em;
+  left: 1em;
+  line-height: 5em;
+  margin: 0;
+  position: absolute;
+  top: 0.25em;
+}
+#footer ul{
+  list-style-type: none;
+}
+#footer .actions li {
+  font-size: 1.25em;
+  margin: 0;
+}
+#footer .actions li a {
+  padding: 0.5em;
+}
+#footer .menu {
+  height: 5em;
+  line-height: 5em;
+  margin: 0;
+  position: absolute;
+  right: 20em;
+  top: 0;
+}
+#footer .menu li {
+  font-size: 20px;
+}
+
+
+
 
 
 
