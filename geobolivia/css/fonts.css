@@ -1,0 +1,38 @@
+
+@font-face {
+  font-family: "ProximaNovaBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proxima-nova/proximanova-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-bold-webfont.woff") format("woff"), url("../fonts/proxima-nova/proximanova-bold-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-bold-webfont.svg#proxima_nova_rgbold") format("svg");
+}
+@font-face {
+  font-family: "ProximaNovaLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proxima-nova/proximanova-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-light-webfont.woff") format("woff"), url("../fonts/proxima-nova/proximanova-light-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-light-webfont.svg#proxima_novalight") format("svg");
+}
+@font-face {
+  font-family: "ProximaNovaRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proxima-nova/proximanova-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-regular-webfont.woff") format("woff"), url("../fonts/proxima-nova/proximanova-regular-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-regular-webfont.svg#proxima_nova_rgregular") format("svg");
+}
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/proxima-nova/proximanova-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/proxima-nova/proximanova-semibold-webfont.woff") format("woff"), url("../fonts/proxima-nova/proximanova-semibold-webfont.ttf") format("truetype"), url("../fonts/proxima-nova/proximanova-semibold-webfont.svg#proxima_novasemibold") format("svg");
+}
+@font-face {
+  font-family: "HurmeGeometricSansBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.woff") format("woff"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.ttf") format("truetype"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.svg#hurmeo_geometric_sans_bold") format("svg");
+}
+
+html, body {
+  background-color: #000000;
+  font-family: "ProximaNovaLight","Helvetica Neue",Helvetica,Arial,sans-serif;
+  height: 100%;
+  width: 100%;
+}
