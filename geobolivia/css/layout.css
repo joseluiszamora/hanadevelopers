@@ -133,8 +133,9 @@
 }
 
 /* SECTION HOME */
-#home{
-  background: url(../images/intro-bg.jpg); 
+#map{
+  background-color: #FFFFFF;
+  /*background: url(../images/intro-bg.jpg); */
 }
 
 
@@ -272,15 +273,38 @@
 #services{
   background-color: #FFFFFF;
 }
-#services .title-box-v2 {
-  margin-bottom: 40px;
-  text-align: center;
+.service {
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding: 15px 15px 10px;
 }
-#services h2 {
-  font-size: 25px;
-  text-transform: uppercase;
+.service .service-icon {
+  color: #72C02C;
+  float: left;
+  font-size: 35px;
+  padding: 10px;
+  text-align: center;
+  transition: all 0.4s ease-in-out 0s;
+}
+.service .fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.service .desc {
+  overflow: hidden;
+  padding: 0 15px;
+}
+.service .desc h4 {
+  font-size: 22px;
+  line-height: 25px;
 }
 
+i.icon-bg-dark {
+  background: none repeat scroll 0 0 #555555;
+}
 /* SECTION CONTACT */
 #contact{
   background: url(../images/white.png);

@@ -29,6 +29,12 @@
   font-weight: normal;
   src: url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.woff") format("woff"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.ttf") format("truetype"), url("../fonts/hurmeo-geometric-sans/HurmeDesign-HurmeGeometricSans4Bold.svg#hurmeo_geometric_sans_bold") format("svg");
 }
+@font-face {
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=4.0.3") format("embedded-opentype"), url("../fonts/font-awesome/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/font-awesome/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/font-awesome/fontawesome-webfont.svg?v=4.0.3#font_awesome") format("svg");
+}
 
 html, body {
   background-color: #000000;

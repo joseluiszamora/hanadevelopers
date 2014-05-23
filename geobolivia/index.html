@@ -8,9 +8,15 @@
     <!-- Styles -->
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
     <link href="css/layout.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/fonts.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+
   </head>
 
   <body>
@@ -22,7 +28,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="icon-bar"></span>
             </button>
-            <a href="#home" class="" data-id="home">
+            <a href="#map" class="" data-id="home">
               <img src="images/logo.png">
             </a>
           </div>
@@ -45,17 +51,13 @@
       <!-- Main Content -->
       <div class="main-content">
         <!-- HOME Section -->
-        <section id="home" data-toggle="tooltip" data-placement="left" title="visor mapfishapp">
+        <section id="map" style="height:800px;">
+          
           <div class="container">
             <div class="row">
               <div class="col-xs-2 col-md-4">&nbsp;</div>
               <div class="col-xs-8 col-md-4">
                 <form id="searchContainer" role="form">
-                  <div class="intro-message">
-                    <h1>GeoBolivia</h1>
-                    <h4>Infraestructura de Datos Espaciales</h4>
-                    <hr class="intro-divider">
-                  </div>
                   <div class="form-group">
                     <div class="input-group input-group-lg">
                       <span class="input-group-addon glyphicon glyphicon-search"></span>
@@ -67,10 +69,11 @@
               <div class="col-xs-2 col-md-4">&nbsp;</div>
             </div>
           </div>
+
         </section>
 
         <!-- CATALOG Visor -->
-        <section id="viewer" style="background:#fff;">
+        <section id="viewer">
           <div class="container">
             <div class="row">
               <div class="sectionTitle title-box-v2">
@@ -319,124 +322,87 @@
               </div>
             </div>
 
-            <div class="row">
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li class="rounded-x" data-target="#carousel-example-generic-2" data-slide-to="0"></li>
-                      <li class="rounded-x active" data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-                      <li class="rounded-x" data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img alt="" src="images/7.jpg" class="img-responsive img-bordered">
-                      </div>
-                      <div class="item">
-                        <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                      </div>
-                      <div class="item">
-                        <img alt="" src="images/6.jpg" class="img-responsive img-bordered">
-                      </div>
-                    </div>
-                  </div>
-                  <h3>Biblioteca</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>    
-              </div>
-              <!-- End Simple Block -->
-              
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/7.jpg" class="img-responsive img-bordered">
-                  <h3>Ayuda</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
-              </div>
-              <!-- End Simple Block -->
-              
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                  <h3>Wiki</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
-              </div>
-              <!-- End Simple Block -->
 
-              <!-- Begin Easy Block v2 -->                
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                  <h3>API</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
+            <div class="row margin-bottom-30">
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-book service-icon"></i>
+                  <div class="desc">
+                    <h4>Biblioteca</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
               </div>
-              <!-- End Simple Block -->
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-book service-icon"></i>
+                  <div class="desc">
+                    <h4>Ayuda</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-book service-icon"></i>
+                  <div class="desc">
+                    <h4>Wiki</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
+              </div>
             </div>
 
-            <div class="row">
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <div id="carousel-example-generic-2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                      <li class="rounded-x" data-target="#carousel-example-generic-2" data-slide-to="0"></li>
-                      <li class="rounded-x active" data-target="#carousel-example-generic-2" data-slide-to="1"></li>
-                      <li class="rounded-x" data-target="#carousel-example-generic-2" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                      <div class="item active">
-                        <img alt="" src="images/7.jpg" class="img-responsive img-bordered">
-                      </div>
-                      <div class="item">
-                        <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                      </div>
-                      <div class="item">
-                        <img alt="" src="images/6.jpg" class="img-responsive img-bordered">
-                      </div>
-                    </div>
+            <div class="row margin-bottom-30">
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-code service-icon"></i>
+                  <div class="desc">
+                    <h4>API</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
                   </div>
-                  <h3>Live DVD</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>    
+                </div>  
               </div>
-              <!-- End Simple Block -->
-              
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/7.jpg" class="img-responsive img-bordered">
-                  <h3>Boletines</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-cogs service-icon"></i>
+                  <div class="desc">
+                    <h4>Boletines</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
               </div>
-              <!-- End Simple Block -->
-              
-              <!-- Begin Easy Block v2 -->
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                  <h3>RSS 2.0</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-rss-square service-icon"></i>
+                  <div class="desc">
+                    <h4>RSS 2.0</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
               </div>
-              <!-- End Simple Block -->
-
-              <!-- Begin Easy Block v2 -->                
-              <div class="col-md-3 col-sm-6 md-margin-bottom-20">
-                <div class="simple-block">
-                  <img alt="" src="images/8.jpg" class="img-responsive img-bordered">
-                  <h3>Descargas ASTER DEM Bolivia</h3>
-                  <p>Pellentesque et erat ac massa cursus porttitor eget sed magna.</p>
-                </div>
-              </div>
-              <!-- End Simple Block -->
             </div>
 
+            <div class="row margin-bottom-30">
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-bookmark service-icon"></i>
+                  <div class="desc">
+                    <h4>Live DVD</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
+              </div>
+              <div class="col-md-4">
+                <div class="service">
+                  <i class="fa fa-download service-icon"></i>
+                  <div class="desc">
+                    <h4>Descargas</h4>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus etiam sem...</p>
+                  </div>
+                </div>  
+              </div>
+            </div>
           </div>
         </section>
 
@@ -522,6 +488,8 @@
   <script src="js/function-scroll.js" type="text/javascript"></script>
   <script src="js/function-sections.js" type="text/javascript"></script>
 
+
+
   <script type="text/javascript">
     $(function(){
       $(".scrollLink").click(function(){
@@ -529,5 +497,19 @@
         $(this).addClass("selected");
       });
     });
+  </script>
+
+  <script type="text/javascript">
+    
+    // create a map in the "map" div, set the view to a given place and zoom
+    var map = L.map('map').setView([-16.719509, -65.538614], 8);
+    var ui = L.tileLayer.wms("http://geo.gob.bo/raster/service/wms?SERVICE=WMS&", {
+      layers: 'mapbox_bolivia',
+      format: 'image/png',
+      transparent: true,
+      attribution: "© Geobolivia"
+    });
+    ui.addTo(map);
+
   </script>
 </html>
