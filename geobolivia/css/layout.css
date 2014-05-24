@@ -1,3 +1,11 @@
+a{
+  color: #333333;
+}
+a:hover{
+  text-decoration: none;
+}
+
+
 /*NAV BAR*/
 #nav-header{
   /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);*/
@@ -278,8 +286,13 @@
   overflow: hidden;
   padding: 15px 15px 10px;
 }
-.service .service-icon {
+.service:hover{
   color: #72C02C;
+  background: none repeat scroll 0 0 #FCFCFC;
+  box-shadow: 0 0 5px #DDDDDD;
+  transition: box-shadow 0.2s ease-in-out 0s;
+}
+.service .service-icon {
   float: left;
   font-size: 35px;
   padding: 10px;
@@ -301,13 +314,16 @@
   font-size: 22px;
   line-height: 25px;
 }
+.service .desc p{
+  color: #333333;
+}
 
 i.icon-bg-dark {
   background: none repeat scroll 0 0 #555555;
 }
 /* SECTION CONTACT */
 #contact{
-  background: url(../images/white.png);
+  background: url(../images/back.jpg);
   position: relative;
 }
 
