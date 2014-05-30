@@ -422,3 +422,30 @@ i.icon-bg-dark {
 .leaflet-control-container{
   display: none;
 }
+
+
+.recent-work a {
+  background: none repeat scroll 0 0 #FCFCFC;
+  display: inline-block;
+  text-align: center;
+}
+.recent-work a img {
+  transition: all 0.8s ease-in-out 0s;
+  width: 100%;
+}
+.bx-wrapper img {
+  display: block;
+  width: 100%;
+}
+.recent-work a span {
+  border-bottom: 2px solid #EEEEEE;
+  display: block;
+  padding: 10px;
+}
+.recent-work a strong {
+    color: #555555;
+    display: block;
+}
+.recent-work a i {
+    color: #777777;
+}
