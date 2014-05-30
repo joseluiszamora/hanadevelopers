@@ -5,11 +5,17 @@ a:hover{
   text-decoration: none;
 }
 
+ul{
+  list-style-type: none;
+}
+ul li{
+  float: left;
+}
 
 /*NAV BAR*/
 #nav-header{
   /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);*/
-  background: url(../images/white1.png);
+  background: url(../images/black.png);
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
   position: fixed;
@@ -65,20 +71,20 @@ a:hover{
 
 
 .intro-message {  
-    position: relative;
-    color: #EAEAEA;
-    margin: -50px 0 0;
+  position: relative;
+  color: #EAEAEA;
+  margin: -50px 0 0;
 }
 
 .intro-message > h1 {
-    font-size: 5em;
-    margin: 0;
-    text-align: center;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 .intro-message > h4 {
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
-    text-align: center;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  text-align: center;
 }
 
 
@@ -134,7 +140,6 @@ a:hover{
   padding: 10px 25px;
 }
 
-
 /* SECTION NAV HEADER */
 .scrollLink.selected{
   color: #72C02C !important;
@@ -144,6 +149,61 @@ a:hover{
 #map{
   background-color: #FFFFFF;
   /*background: url(../images/intro-bg.jpg); */
+}
+
+#map #searchInput{
+  background-color: transparent;
+  background-image: url(../images/sa.png);
+  border: 2px solid #FFFFFF;
+  color: #FFFFFF;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+#map #searchContainer .input-group{
+  width: 100%;
+}
+
+#map #searchInput::-webkit-input-placeholder { /* WebKit browsers */
+  color:    #FFF;
+}
+#map #searchInput:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    #FFF;
+  opacity:  1;
+}
+#map #searchInput::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    #FFF;
+  opacity:  1;
+}
+#map #searchInput:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:    #FFF;
+}
+#map #social-icons {
+  padding: 0;
+  z-index: 5000;
+  width: 242px;
+  margin: 0 auto;
+}
+#map #social-icons li {
+  display: inline-block;
+  list-style: none outside none;
+  margin-bottom: 5px;
+  margin-right: 3px;
+}
+#map .service-icon {
+  float: left;
+  font-size: 35px;
+  padding: 5px;
+  text-align: center;
+  transition: all 0.4s ease-in-out 0s;
+}
+#map #social-icons li a, a.social-icon {
+  display: block;
+  transition: all 0.3s ease-in-out 0s;
+  color: #fff;
 }
 
 
@@ -323,53 +383,42 @@ i.icon-bg-dark {
 }
 /* SECTION CONTACT */
 #contact{
-  background: url(../images/back.jpg);
+  /*background: url(../images/back.jpg);*/
   position: relative;
 }
 
-#footer {
-  background: none repeat scroll 0 0 #39454B;
+.footer {
   color: rgba(185, 186, 187, 0.5);
-  height: 5em;
-  line-height: 5em;
-  margin: -150px 0 0;
+  height: 55px;
+  line-height: 2em;
+  margin: 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
+  z-index: 5;
 }
-#footer a {
-  color: rgba(185, 186, 187, 0.5);
+.footer a{
+  color: #FFF;
 }
-#footer a:hover {
-  color: #B9BABB;
+.footer .separator{
+  margin: 0 5px;
 }
-#footer .actions {
-  height: 5em;
-  left: 1em;
-  line-height: 5em;
-  margin: 0;
-  position: absolute;
-  top: 0.25em;
+.footer .center{
+  text-align: center;
+  float: left;
+  width: 100%;
+  color: #fff;
 }
-#footer ul{
-  list-style-type: none;
+#color.footer{
+  background: none repeat scroll 0 0 #39454B;
+  display: none;
 }
-#footer .actions li {
-  font-size: 1.25em;
-  margin: 0;
+#transparent.footer{
+  background: url(../images/black.png);
 }
-#footer .actions li a {
-  padding: 0.5em;
-}
-#footer .menu {
-  height: 5em;
-  line-height: 5em;
-  margin: 0;
-  position: absolute;
-  right: 20em;
-  top: 0;
-}
-#footer .menu li {
-  font-size: 20px;
+
+
+.leaflet-control-container{
+  display: none;
 }
