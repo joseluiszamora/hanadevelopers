@@ -4,13 +4,13 @@ a{
 a:hover{
   text-decoration: none;
 }
-
+/*
 ul{
   list-style-type: none;
 }
 ul li{
   float: left;
-}
+}*/
 
 /*NAV BAR*/
 #nav-header{
@@ -48,7 +48,7 @@ ul li{
 
 .totop {
   position:fixed;
-  bottom:20px;
+  bottom:10px;
   right:20px;
   z-index:500;
   border-radius:2px;
@@ -231,12 +231,6 @@ ul li{
   text-shadow: 0 1px 0 #FFFFFF;
 }
 
-
-/*.labs #work article .image {
-    border-radius: 340px;
-    height: 340px;
-}*/
-
 #viewer .element .image {
   background: none repeat scroll 0 0 #F2F2F2;
   border: 1px solid #D5D5D5;
@@ -258,6 +252,46 @@ ul li{
   margin: 56px 0 0 6px;
   border: 1px solid #000;
 }
+
+#viewer .viewerImage{
+  float: left;
+  width: 100%;
+  min-height: 200px;
+}
+
+#viewer .element{
+  margin-bottom: 50px;
+}
+
+.recent-work a {
+  background: none repeat scroll 0 0 #FCFCFC;
+  display: inline-block;
+  text-align: center;
+}
+.recent-work a img {
+  transition: all 0.8s ease-in-out 0s;
+  width: 100%;
+}
+.bx-wrapper img {
+  display: block;
+  width: 100%;
+}
+.recent-work a span {
+  border-bottom: 2px solid #EEEEEE;
+  display: block;
+  padding: 10px;
+}
+.recent-work a strong {
+  color: #555555;
+  display: block;
+}
+.recent-work a i {
+  color: #777777;
+}
+
+
+
+
 
 /* SECTION INSTITUTION */
 #institution{
@@ -319,9 +353,9 @@ ul li{
 #info{
   background-color: #FFFFFF;
 }
-#info .sectionTitle{
+/*#info .sectionTitle{
   color: #ffffff;
-}
+}*/
 
 .infosection .inner-info {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -388,15 +422,15 @@ i.icon-bg-dark {
 }
 
 .footer {
-  color: rgba(185, 186, 187, 0.5);
-  height: 55px;
-  line-height: 2em;
+  height: 45px;
+  line-height: 1.5em;
   margin: 0;
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
   z-index: 5;
+  padding: 4px 0 0;
 }
 .footer a{
   color: #FFF;
@@ -413,9 +447,11 @@ i.icon-bg-dark {
 #color.footer{
   background: none repeat scroll 0 0 #39454B;
   display: none;
+  color: #FFFFFF;
 }
 #transparent.footer{
   background: url(../images/black.png);
+  color: rgba(185, 186, 187, 0.5);
 }
 
 
@@ -424,28 +460,28 @@ i.icon-bg-dark {
 }
 
 
-.recent-work a {
-  background: none repeat scroll 0 0 #FCFCFC;
-  display: inline-block;
-  text-align: center;
-}
-.recent-work a img {
-  transition: all 0.8s ease-in-out 0s;
+
+
+
+
+.separatorBlock{
+  float: left;
   width: 100%;
+  background-color: #007934;
 }
-.bx-wrapper img {
-  display: block;
-  width: 100%;
+.separatorBlock div{
+  float: left;
+  height: 3px;
 }
-.recent-work a span {
-  border-bottom: 2px solid #EEEEEE;
-  display: block;
-  padding: 10px;
+.separatorBlock .red{
+  width: 33%;
+  background-color: #d52b1e;
 }
-.recent-work a strong {
-    color: #555555;
-    display: block;
+.separatorBlock .yellow{
+  width: 33%;
+  background-color: #f9e401;
 }
-.recent-work a i {
-    color: #777777;
+.separatorBlock .green{
+  width: 33%;
+  background-color: #007934;
 }

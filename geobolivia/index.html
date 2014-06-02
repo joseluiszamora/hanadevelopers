@@ -28,7 +28,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="icon-bar"></span>
             </button>
-            <a href="#map" class="" data-id="home">
+            <a href="#map" class="scrollLink" data-id="map">
               <img src="images/logo.png">
             </a>
           </div>
@@ -49,11 +49,20 @@
       <!-- Navigation End -->
       
       <footer class="footer" id="color">
-        <img src="images/social.png">
-        
-        <ul class="menu">
-          <li>&copy; Geobolivia</li>
-        </ul>
+        <div class="row">
+          <div class="col-xs-2 col-md-3">&nbsp;</div>
+          <div class="col-xs-8 col-md-6">
+            <div class="center">
+              <a href="http://www.cooperacion-suiza.admin.ch/bolivia/">Cooperación Suiza</a>
+              <span class="separator">|</span>
+              <a href="http://www.entel.bo/web2.0/">Entel</a>
+              <span class="separator">|</span>
+              <a href="http://www.vicepresidencia.gob.bo/">Vicepresidencia del Estado Plurinacional de Bolivia</a>
+            </div>
+            <div class="center">GeoBolivia - La Paz - Bolivia</div>
+          </div>
+          <div class="col-xs-2 col-md-3">&nbsp;</div>
+        </div>
       </footer>
 
       <footer class="footer" id="transparent">
@@ -61,18 +70,16 @@
           <div class="col-xs-2 col-md-3">&nbsp;</div>
           <div class="col-xs-8 col-md-6">
             <div class="center">
-              <a href="">Cooperación Suiza</a>
+              <a href="http://www.cooperacion-suiza.admin.ch/bolivia/">Cooperación Suiza</a>
               <span class="separator">|</span>
-              <a href="">Entel</a>
+              <a href="http://www.entel.bo/web2.0/">Entel</a>
               <span class="separator">|</span>
-              <a href="">Vicepresidencia del Estado Plurinacional de Bolivia</a>
+              <a href="http://www.vicepresidencia.gob.bo/">Vicepresidencia del Estado Plurinacional de Bolivia</a>
             </div>
             <div class="center">GeoBolivia - La Paz - Bolivia</div>
           </div>
           <div class="col-xs-2 col-md-3">&nbsp;</div>
-        <ul class="menu">
-          <li>&copy; Geobolivia</li>
-        </ul>
+        </div>
       </footer>
 
       
@@ -116,9 +123,14 @@
               <div class="col-xs-2 col-md-4">&nbsp;</div>
             </div>
           </div>
-
         </section>
-
+        
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+        
         <!-- CATALOG Visor -->
         <section id="viewer">
           <div class="container">
@@ -132,9 +144,7 @@
             <div class="row recent-work">
               <div class="element col-xs-6 col-md-3">
                 <a href="http://geo.gob.bo/catalogapp/">
-                  <em class="overflow-hidden">
-                    <img alt="simplesafe" class="attachment-labs-thumb wp-post-image" src="images/viewer1.png">
-                  </em>
+                  <div class="viewerImage" id="viewerImage1"></div>
                   <span>
                     <strong>Catálogo</strong>
                     <i>
@@ -145,9 +155,7 @@
               </div>
               <div class="element col-xs-6 col-md-3">
                 <a href="http://geo.gob.bo/geonetwork/">
-                  <em class="overflow-hidden">
-                    <img alt="simplesafe" class="attachment-labs-thumb wp-post-image" src="images/viewer2.png">
-                  </em>
+                  <div class="viewerImage" id="viewerImage2"></div>
                   <span>
                     <strong>Catálogo Avanzado</strong>
                     <i>
@@ -158,9 +166,7 @@
               </div>
               <div class="element col-xs-6 col-md-3">
                 <a href="http://geo.gob.bo/mapfishapp/">
-                  <em class="overflow-hidden">
-                    <img alt="simplesafe" class="attachment-labs-thumb wp-post-image" src="images/viewer3.png">
-                  </em>
+                  <div class="viewerImage" id="viewerImage3"></div>
                   <span>
                     <strong>Visualizador</strong>
                     <i>
@@ -171,9 +177,10 @@
               </div>
               <div class="element col-xs-6 col-md-3">
                 <a href="http://geo.gob.bo/mapfishapp/">
-                  <em class="overflow-hidden">
+                  <div class="viewerImage" id="viewerImage4"></div>
+                  <!--<em class="overflow-hidden">
                     <img alt="simplesafe" class="attachment-labs-thumb wp-post-image" src="images/viewer3.png">
-                  </em>
+                  </em>-->
                   <span>
                     <strong>Visualizador Liviano</strong>
                     <i>
@@ -186,6 +193,12 @@
 
           </div>
         </section>
+
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
 
         <!-- INSTITUTION Section -->
         <section id="institution">
@@ -244,6 +257,12 @@
 
           </div>
         </section>
+
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
 
         <!-- COURSES Section -->
         <section id="courses">
@@ -316,6 +335,12 @@
           </div>
         </section>
 
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+
         <!-- INFORMATION Section -->
         <section id="info">
           <div class="container">
@@ -378,6 +403,12 @@
 
           </div>
         </section>
+
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
 
         <!-- SERVICES Section -->
         <section id="services">
@@ -487,6 +518,13 @@
           </div>
         </section>
 
+        <div class="separatorBlock">
+          <div class="red"></div>
+          <div class="yellow"></div>
+          <div class="green"></div>
+        </div>
+
+        <!-- CONTACTS Section -->
         <section id="contact">
           <div class="container">
             <div class="row">
@@ -575,6 +613,12 @@
   <script type="text/javascript">
     $(function(){
       $("#contact").backstretch("images/back.jpg");
+
+      // viewer section
+      $("#viewerImage1").backstretch("images/viewer1.png");
+      $("#viewerImage2").backstretch("images/viewer2.png");
+      $("#viewerImage3").backstretch("images/viewer3.png");
+      $("#viewerImage4").backstretch("images/viewer3.png");
 
       $(".scrollLink").click(function(){
         $(".scrollLink").removeClass("selected");
