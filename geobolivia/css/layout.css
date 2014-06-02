@@ -153,14 +153,15 @@ ul li{
 
 #map #searchInput{
   background-color: transparent;
-  background-image: url(../images/sa.png);
-  border: 2px solid #FFFFFF;
+  background-image: url(../images/search.png);
+  border: 1px solid #FFFFFF;
   color: #FFFFFF;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
   background-position: right center;
   background-repeat: no-repeat;
+  box-shadow: 1px 1px 8px #FFF inset;
 }
 
 #map #searchContainer .input-group{
@@ -267,6 +268,11 @@ ul li{
   background: none repeat scroll 0 0 #FCFCFC;
   display: inline-block;
   text-align: center;
+  border-bottom: 5px solid #EEEEEE;
+  color: #333333;
+}
+.recent-work a:hover{
+  border-bottom: 5px solid #72C02C;
 }
 .recent-work a img {
   transition: all 0.8s ease-in-out 0s;
@@ -277,7 +283,6 @@ ul li{
   width: 100%;
 }
 .recent-work a span {
-  border-bottom: 2px solid #EEEEEE;
   display: block;
   padding: 10px;
   float: left;
@@ -285,23 +290,27 @@ ul li{
 .recent-work a strong {
   color: #555555;
   display: block;
+  font-size: 16px;
+  line-height: 43px;
+  text-transform: uppercase;
 }
 .recent-work a i {
   color: #777777;
 }
 
-
-
-
-
 /* SECTION INSTITUTION */
 #institution{
   background-color: #FFFFFF;
 }
-.institutionInfo{
-  padding: 50px 0 0 30px;
+#institution .institutionInfo{
+  padding: 50px 0 0 20px;
 }
-
+#institution .institutionInfo button{
+  margin-right: 10px;
+}
+#institution .intro{
+  text-align: justify;
+}
 
 /* SECTION COURSES */
 #courses{
@@ -354,9 +363,6 @@ ul li{
 #info{
   background-color: #FFFFFF;
 }
-/*#info .sectionTitle{
-  color: #ffffff;
-}*/
 
 .infosection .inner-info {
   background: none repeat scroll 0 0 #FFFFFF;
@@ -422,6 +428,7 @@ i.icon-bg-dark {
   position: relative;
 }
 
+/* SECTION FOOTER */
 .footer {
   height: 45px;
   line-height: 1.5em;
@@ -459,11 +466,7 @@ i.icon-bg-dark {
   display: none;
 }
 
-
-
-
-
-
+/* SEPARATOR BLOCK BETWEEN SECTIONS */
 .separatorBlock{
   float: left;
   width: 100%;
@@ -471,7 +474,7 @@ i.icon-bg-dark {
 }
 .separatorBlock div{
   float: left;
-  height: 3px;
+  height: 1px;
 }
 .separatorBlock .red{
   width: 33%;
