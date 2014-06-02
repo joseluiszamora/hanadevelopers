@@ -280,6 +280,7 @@ ul li{
   border-bottom: 2px solid #EEEEEE;
   display: block;
   padding: 10px;
+  float: left;
 }
 .recent-work a strong {
   color: #555555;
@@ -454,8 +455,7 @@ i.icon-bg-dark {
   color: rgba(185, 186, 187, 0.5);
 }
 
-
-.leaflet-control-container{
+.leaflet-control-zoom{
   display: none;
 }
 
