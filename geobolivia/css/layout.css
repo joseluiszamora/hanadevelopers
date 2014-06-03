@@ -426,6 +426,7 @@ i.icon-bg-dark {
 #contact{
   /*background: url(../images/back.jpg);*/
   position: relative;
+  background: #FFF;
 }
 
 /* SECTION FOOTER */
