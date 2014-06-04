@@ -51,8 +51,9 @@ function headerColorsTransparent(){
   $("#nav-header .navbar-nav > li > a").css("color", "#FFFFFF");
 }
 function headerColorsWhite(){
-  $("#nav-header").css("background", "none repeat scroll 0 0 #F8F8F8");
-  $("#nav-header .navbar-nav > li > a").css("color", "#000000");
+  //$("#nav-header").css("background", "none repeat scroll 0 0 #F8F8F8");
+  $("#nav-header").css("background", "url(images/black1.png)");
+  $("#nav-header .navbar-nav > li > a").css("color", "#FFFFFF");
 }
 function footerColor(){
   $("#transparent.footer").css("display", "none");

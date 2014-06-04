@@ -39,6 +39,10 @@ ul li{
 
 #nav-header .navbar-nav > li > a:hover{
   color: #72C02C;
+  background-color: transparent;
+  -moz-box-shadow:    0 0 8px 2px #FFFFFF inset;
+  -webkit-box-shadow: 0 0 8px 2px #FFFFFF inset;
+  box-shadow:         0 0 8px 2px #FFFFFF inset;
 }
 
 
