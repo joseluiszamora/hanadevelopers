@@ -21,8 +21,24 @@
 
   <body>
     <div class="wrapper">
-      <!-- Navigation -->
-      <nav id="nav-header" class="navbar navbar-fixed-top" role="navigation">
+      <div id="header">
+        <div id="osclogo">
+          <a href="#map" class="scrollLink" data-id="map">
+            <img src="images/logo.png">
+          </a>
+        </div>
+        <ul id="mainmenu">
+          <li class="active"><a href="#" class="scrollLink" data-id="viewer">Visualizadores</a></li>
+          <li><a href="#" class="scrollLink" data-id="institution">Institución</a></li>
+          <li><a href="#" class="scrollLink" data-id="courses">Cursos</a></li>
+        </ul>
+        <ul id="rightmenu">
+          <li><a href="#" class="scrollLink" data-id="info">Información</a></li>
+          <li><a href="#" class="scrollLink" data-id="services">Servicios</a></li>
+          <li><a href="#" class="scrollLink" data-id="contact">Contactanos</a></li>
+        </ul>
+      </div>
+      <!--<nav id="nav-header" class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -45,8 +61,7 @@
           </div>
 
         </div>
-      </nav>
-      <!-- Navigation End -->
+      </nav>-->
 
 <!--      
       <footer class="footer" id="color">
@@ -100,7 +115,7 @@
                     </div>
                   </div>
                   
-                  <input type="submit" onkeypress="return any_submit_rechercher_10f4.apply(this);" onclick="return any_submit_rechercher_10f4.apply(this);" title="Buscar" value="&gt;&gt;" class="submit">
+                  <input type="submit" onkeypress="return any_submit_rechercher_10f4.apply(this);" onclick="return any_submit_rechercher_10f4.apply(this);" title="Buscar" value="&nbsp;" class="submit">
 
                 </form>
 
@@ -207,10 +222,10 @@
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#home" data-toggle="tab">Geobolivia</a></li>
-              <li><a href="#ide" data-toggle="tab">Introducción a las IDE’s</a></li>
-              <li><a href="#ideepb" data-toggle="tab">La IDE-EPB</a></li>
-              <li><a href="#comite" data-toggle="tab">Comité Interinstitucional</a></li>
+              <li class="active"><a class="btn btn-success" href="#home" data-toggle="tab">Geobolivia</a></li>
+              <li><a class="btn btn-success" href="#ide" data-toggle="tab">Introducción a las IDE’s</a></li>
+              <li><a class="btn btn-success" href="#ideepb" data-toggle="tab">La IDE-EPB</a></li>
+              <li><a class="btn btn-success" href="#comite" data-toggle="tab">Comité Interinstitucional</a></li>
             </ul>
 
             <!-- Tab panes -->
@@ -240,27 +255,24 @@
                       </ol>
                       <div class="carousel-inner">
                         <div class="item active">
-                          <img class="img-responsive img-bordered" src="images/7.jpg" alt="">
+                          <img class="img-responsive img-bordered" src="images/geobolivia/geobolivia.png" alt="" height="200">
                         </div>
                         <div class="item">
-                          <img class="img-responsive img-bordered" src="images/8.jpg" alt="">
+                          <img class="img-responsive img-bordered" src="images/geobolivia/IDE_ACTORES.png" alt="" height="200">
                         </div>
                         <div class="item">
-                          <img class="img-responsive img-bordered" src="images/6.jpg" alt="">
+                          <img class="img-responsive img-bordered" src="images/geobolivia/IDE_COMPONENTES.png" alt="" height="200">
+                        </div>
+                        <div class="item">
+                          <img class="img-responsive img-bordered" src="images/geobolivia/visualizador.png" alt="" height="200">
                         </div>
                       </div>
-                    </div>
-
-                    <div class="row institutionInfo">
-                      <button type="button" class="btn btn-success col-xs-3 col-md-4">Introducción a las IDE’s</button>
-                      <button type="button" class="btn btn-success col-xs-2 col-md-2">La IDE-EPB</button>
-                      <button type="button" class="btn btn-success col-xs-3 col-md-4">Comité Interinstitucional</button>
-                      
                     </div>
 
                   </div>
                 </div>
               </div>
+              
               <div class="tab-pane fade" id="ide">
                 <p>
                   La creciente valorización de la información geográfica en las últimas décadas, hace evidente la necesidad de acuerdos de compartición de bases de datos geoespaciales, todo esto con vista a la integración, compatibilización (armonización) y puesta a disposición de aquellas consideradas de uso común, estos factores impulsaron la construcción de las IDE’s en el mundo, llegando a ser consideradas una acción esencial de buen gobierno, tanto para el Estado como para la sociedad. 
@@ -269,11 +281,6 @@
                   El incremento en el uso de las IDEs en las labores y tareas del día a día, independientemente del área de trabajo, hace que los acuerdos mencionados con anterioridad, establecidos inicialmente entre órganos públicos, actualmente abarquen todos los actores de la sociedad creando una mentalidad más responsable con el medio ambiente y consciente de las demandas sociales; pero por sobretodo promoviendo una mayor comprensión de la realidad territorial.
                  </p>
 
-
-                  
-                  
-                  
-                  
                  <div class="panel-group" id="accordion">
                   <div class="panel panel-default">
                     <div class="panel-heading">
@@ -385,11 +392,18 @@
                     </div>
                   </div>
                 </div>
-
               </div>
+
               <div class="tab-pane fade" id="ideepb">
+                <p>En base a lo descrito anteriormente, la Infraestructura de Datos Espaciales del Estado Plurinacional de Bolivia (IDE-EPB), se define (preliminarmente) como:</p>
 
+                <p>"El conjunto de políticas, estándares, organizaciones y recursos tecnológicos, para facilitar el acceso y uso de la información geográfica, apoyar el desarrollo social, económico y ambiental, con la optimización en la producción y uso de la información geográfica, de manera oportuna y con un alto grado de precisión y calidad." </p>
+
+                <p>Orientada a facilitar la consulta, acceso, adquisición y actualización de datos geográficos, a las entidades de Gobierno, privadas y la comunidad en general, mediante los avances alcanzados por el Comité Interinstitucional, la IDE-EPB planea garantizar el intercambio de la Información Geográfica en todo el territorio nacional.</p>
+
+                <p>La infraestructura así concebida permitirá no solo el acceso a la información, sino el intercambio de la misma mediante protocolos pre-establecidos que permitirán la construcción de un Estado Digital para el 2014.</p>
               </div>
+
               <div class="tab-pane fade" id="comite">...</div>
             </div>
 
