@@ -31,12 +31,12 @@ $(function(){
   $(window).scroll(function(){
     if ($(this).scrollTop()>300) {
       $('.totop').fadeIn();
-      headerColorsWhite();
-      footerColor();
+      //headerColorsWhite();
+      //footerColor();
     }else{
       $('.totop').fadeOut();
-      headerColorsTransparent();
-      footerTransparent();
+      //headerColorsTransparent();
+      //footerTransparent();
     }
   });
   

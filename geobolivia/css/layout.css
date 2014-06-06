@@ -14,10 +14,10 @@ ul li{
 
 /*NAV BAR*/
 #nav-header{
-  /*background: none repeat scroll 0 0 rgba(0, 0, 0, 0.2);*/
-  background: url(../images/black.png);
+  background: url(../images/head.png);
+  /*
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 -1px 10px 0 rgba(0, 0, 0, 0.2);*/
   position: fixed;
   text-align: center;
   top: 0;
@@ -25,10 +25,6 @@ ul li{
   margin: 0;
   z-index: 9999;
 }
-#nav-header .container{
-  /*background: none repeat scroll 0 0 rgba(255, 126, 0, 0.2);*/
-}
-
 #nav-header .navbar-nav > li > a {
   color: #FFFFFF;
   font-size: 16px;
@@ -45,7 +41,71 @@ ul li{
   box-shadow:         0 0 8px 2px #FFFFFF inset;
 }
 
-
+#nav-header #osclogo {
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+#nav-header ul#mainmenu {
+  list-style: none outside none;
+  margin: 0 0 0 185px;
+}
+#nav-header ul#mainmenu li {
+  float: left;
+  font-size: 1em;
+  height: 50px;
+  margin: 0 0 0 10px;
+  padding: 0 15px 0 10px;
+}
+#nav-header ul#mainmenu li.active {
+  background: none repeat scroll 0 0 #2D607B;
+}
+#nav-header ul#mainmenu li.inactive {
+  background: none repeat scroll 0 0 #464955;
+}
+#nav-header ul#mainmenu li a {
+  color: #C8C8C8;
+  display: block;
+  height: 21px;
+  letter-spacing: 1px;
+  line-height: 10px;
+  margin-top: 12px;
+  padding-left: 10px;
+  text-decoration: none;
+  text-shadow: 0 0 1px #c8c8c8;
+}
+#nav-header ul#mainmenu li a .glyphicon{
+  font-size: 21px;
+  padding: 0 5px 0 0;
+}
+#nav-header ul#mainmenu li a:hover {
+  color: #FFFFFF;
+}
+#nav-header ul#rightmenu {
+  float: right;
+  list-style: none outside none;
+  margin: 8px;
+  padding: 0;
+}
+#nav-header ul#rightmenu li {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#nav-header ul#rightmenu li a {
+  background-color: #463855;
+  border-radius: 5px;
+  color: #CCCCCC;
+  display: block;
+  letter-spacing: 1px;
+  margin: 0 0 0 10px;
+  padding: 10px;
+  text-decoration: none;
+}
+#nav-header ul#rightmenu li a:hover {
+  background-color: #003050;
+  color: #FFFFFF;
+}
 
 
 /* To Top Starts */
@@ -492,120 +552,4 @@ i.icon-bg-dark {
 .separatorBlock .green{
   width: 33%;
   background-color: #007934;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-div#header {
-    background: none no-repeat scroll left top #464955;
-    border-bottom: 1px solid #000000;
-    height: 50px;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-div#osclogo {
-    border: 0 none;
-    display: block;
-    left: 0;
-    position: absolute;
-    top: 0;
-}
-div#header ul#mainmenu {
-    list-style: none outside none;
-    margin: 0 0 0 230px;
-    padding: 0;
-}
-div#header ul#mainmenu li {
-    display: block;
-    float: left;
-    font-size: 1em;
-    height: 50px;
-    margin: 0 0 0 10px;
-    padding: 0 15px 0 10px;
-}
-div#header ul#mainmenu li.active {
-    background: none repeat scroll 0 0 #2D607B;
-}
-div#header ul#mainmenu li.inactive {
-    background: none repeat scroll 0 0 #464955;
-}
-div#header ul#mainmenu li a {
-    color: #C8C8C8;
-    display: block;
-    height: 25px;
-    letter-spacing: 1px;
-    line-height: 25px;
-    margin-top: 12px;
-    padding-left: 50px;
-    text-decoration: none;
-    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-}
-div#header ul#mainmenu li a.actionmaps {
-    background: url("images/oscactionmaps.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-div#header ul#mainmenu li a.search {
-    background: url("images/oscsearch.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-div#header ul#mainmenu li a.help {
-    background: url("images/oschelp.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-}
-div#header ul#mainmenu li a:hover {
-    background-position: 0 -25px;
-    color: #FFFFFF;
-}
-div#header ul#rightmenu {
-    float: right;
-    list-style: none outside none;
-    margin: 8px;
-    padding: 0;
-}
-div#header ul#rightmenu li {
-    float: left;
-    margin: 0;
-    padding: 0;
-}
-div#header ul#rightmenu li a {
-    background-color: #463855;
-    border-radius: 5px;
-    color: #CCCCCC;
-    display: block;
-    margin: 0 0 0 10px;
-    padding: 10px;
-    text-decoration: none;
-}
-div#header ul#rightmenu li a:hover {
-    background-color: #003050;
-    color: #FFFFFF;
-}
-div#header ul#rightmenu li a#login, div#header ul#rightmenu li a#logout {
-    background: none repeat scroll 0 0 #00BAFF;
-    color: #000000;
-}
-div#header ul#rightmenu li a#login:hover, div#header ul#rightmenu li a#logout {
-    background: none repeat scroll 0 0 #0782B5;
-    color: #FFFFFF;
-}
-ul#rightmenu a.twitter, .twitter:link, .twitter:visited {
-    background: url("images/icon_twitter_on.png") no-repeat scroll center center #463855;
-    border: 0 none;
-    height: 16px;
-    margin: 0;
-    padding: 0;
-    width: 16px;
-}
-ul#rightmenu a.twitter:hover {
 }
